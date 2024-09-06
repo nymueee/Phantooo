@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Amiga!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            background-image: url('https://www.example.com/fondo.jpg'); /* Imagen de fondo opcional */
+            background-size: cover;
+        }
+        header {
+            background-color: #333;
+            padding: 50px;
+            color: #f0e68c;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: auto;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .mensaje-personal {
+            background-color: #444;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        .galeria, .interactivo {
+            margin: 20px 0;
+        }
+        .galeria img, .interactivo img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .galeria img:hover, .interactivo img:hover {
+            transform: scale(1.1);
+        }
+        .interactivo {
+            background-color: #222;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        .carpeta {
+            display: inline-block;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .carpeta:hover {
+            background-color: #ffcc00;
+        }
+        .fotos-carpeta {
+            display: none;
+            margin-top: 20px;
+        }
+        .fotos-carpeta img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .decoracion {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .decoracion img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+        footer {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="Bandera de Brasil">
+        <h1>¡Feliz Cumpleaños, [Nombre de tu Amiga]!</h1>
+        <p>Te quiero mucho, gracias por tantos años de amistad. ¡Eres la mejor!</p>
+    </header>
+
+    <section class="mensaje-personal">
+        <p>Amiga, en este día especial quiero decirte lo importante que eres para mí. 
+        Tu amistad me ha dado momentos inolvidables y quiero agradecerte por estar siempre ahí. 
+        ¡Que disfrutes mucho este día, y que sigamos compartiendo momentos por muchos años más! 
+        <strong>¡Te quiero!</strong></p>
+    </section>
+
+    <section class="galeria">
+        <h2>Tus fotos favoritas de Ghost</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ghost_%28band%29_2015.jpg/800px-Ghost_%28band%29_2015.jpg" alt="Ghost Banda 1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Ghost_2019.jpg/800px-Ghost_2019.jpg" alt="Ghost Banda 2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ghost_2018.jpg/800px-Ghost_2018.jpg" alt="Ghost Banda 3">
+    </section>
+
+    <section class="interactivo">
+        <h2>Descubre tus sorpresas</h2>
+        <div class="carpeta" onclick="mostrarFotos('carpeta1')">Carpeta de Recuerdos 1</div>
+        <div class="carpeta" onclick="mostrarFotos('carpeta2')">Carpeta de Recuerdos 2</div>
+
+        <div id="carpeta1" class="fotos-carpeta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ghost_%28band%29_2015.jpg/800px-Ghost_%28band%29_2015.jpg" alt="Recuerdo 1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Ghost_2019.jpg/800px-Ghost_2019.jpg" alt="Recuerdo 2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ghost_2018.jpg/800px-Ghost_2018.jpg" alt="Recuerdo 3">
+            <!-- Puedes agregar más imág
